@@ -2,7 +2,7 @@ class Prompter < Formula
   desc "Zero-dependency CLI for prompt enhancement, restructuring, and prompt vault search"
   homepage "https://github.com/dotcommander/prompter"
   url "https://github.com/dotcommander/prompter/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "537777e2358b9b267f51cb2dd12a95aaa9eb81d944cf50d280f65a41f23fb53f"
+  sha256 "f2782ad164e1f32b31d695ce7317b71ef6c4bb7c3c85736075c1e7d9b38d28a9"
   license "MIT"
   head "https://github.com/dotcommander/prompter.git", branch: "main"
 
