@@ -1,8 +1,8 @@
 class Prompter < Formula
-  desc "Zero-dependency CLI for prompt enhancement, restructuring, and prompt vault search"
+  desc "CLI for prompt enhancement, restructuring, and prompt vault search"
   homepage "https://github.com/dotcommander/prompter"
-  url "https://github.com/dotcommander/prompter/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "e268418b88fd9604480950f4d69f6908ae0b0d502363d744800853a65f7bd43f"
+  url "https://github.com/dotcommander/prompter/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "13a0a472bcb461eb830831b716efb0220fc514770f60517017dd8cb349daaddb"
   license "MIT"
   head "https://github.com/dotcommander/prompter.git", branch: "main"
 
@@ -14,7 +14,7 @@ class Prompter < Formula
   end
 
   test do
-    assert_match "prompter", shell_output("#{bin}/prompter version")
-    assert_match "Supported LLM Providers", shell_output("#{bin}/prompter providers")
+    assert_match "prompter v", shell_output("#{bin}/prompter --version")
+    assert_match "test", shell_output("#{bin}/prompter image 'test'")
   end
 end
