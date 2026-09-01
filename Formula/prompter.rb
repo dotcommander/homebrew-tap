@@ -1,8 +1,8 @@
 class Prompter < Formula
   desc "CLI for prompt enhancement, restructuring, and prompt vault search"
   homepage "https://github.com/dotcommander/prompter"
-  url "https://github.com/dotcommander/prompter/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "a324388a500ea729dc059a462527bbae5f98f6b4de139453f2c68c2ca3ae54f2"
+  url "https://github.com/dotcommander/prompter/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "2b823215d6dd7c323a616f5e1cb01d21c23deaab0fa99069d4ece2c092bf84d5"
   license "MIT"
   head "https://github.com/dotcommander/prompter.git", branch: "main"
 
