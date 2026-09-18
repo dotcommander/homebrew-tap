@@ -7,8 +7,6 @@ class Jskill < Formula
       using:    :git
   version "0.1.0"
   head "https://github.com/dotcommander/jskill.git", branch: "main"
-  license "MIT"
-
   depends_on "go" => :build
 
   def install
