@@ -1,11 +1,10 @@
 class Jskill < Formula
-  desc "Resolve, render, and run Jcode-compatible skills from the command line"
+  desc "Find, render, validate, and invoke skills from a canonical local catalog"
   homepage "https://github.com/dotcommander/jskill"
   url "https://github.com/dotcommander/jskill.git",
-      tag:      "v0.1.0",
-      revision: "b25424dffc0acf74a9fdc6437e1202811a8dd251",
+      tag:      "v0.2.0",
+      revision: "266e806b282689853648b5e918b972680e0a9353",
       using:    :git
-  version "0.1.0"
   head "https://github.com/dotcommander/jskill.git", branch: "main"
   depends_on "go" => :build
 
