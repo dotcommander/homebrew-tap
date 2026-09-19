@@ -1,16 +1,17 @@
 class Jskill < Formula
-  desc "Find, render, validate, and invoke skills from a canonical local catalog"
+  desc "Retrieve, inspect, and invoke local skills and knowledge"
   homepage "https://github.com/dotcommander/jskill"
   url "https://github.com/dotcommander/jskill.git",
-      tag:      "v0.2.0",
-      revision: "266e806b282689853648b5e918b972680e0a9353",
+      tag:      "v0.3.0",
+      revision: "4bdf1eb558e063504537064650205a4e3faf9daa",
       using:    :git
   head "https://github.com/dotcommander/jskill.git", branch: "main"
   depends_on "go" => :build
 
   def install
     ENV["GOWORK"] = "off"
-    system "go", "build", *std_go_args(ldflags: "-s -w"), "./cmd/jskill"
+    ldflags = "-s -w -X github.com/dotcommander/jskill/internal/app.version=#{version}"
+    system "go", "build", *std_go_args(ldflags:), "./cmd/jskill"
   end
 
   test do
