@@ -1,10 +1,11 @@
 class Jskill < Formula
   desc "Retrieve, inspect, and invoke local skills and knowledge"
   homepage "https://github.com/dotcommander/jskill"
-  url "https://github.com/dotcommander/jskill.git",
-      tag:      "v0.5.1",
-      revision: "7f1e0f5327c7565472f3299c46db40513d0934bb",
-      using:    :git
+  # A direct archive URL avoids redirects while sending the private-repo credential.
+  url "https://codeload.github.com/dotcommander/jskill/legacy.tar.gz/7f1e0f5327c7565472f3299c46db40513d0934bb",
+      headers: ["Authorization: Bearer #{ENV.fetch("HOMEBREW_JSKILL_GITHUB_TOKEN", "")}"]
+  version "0.5.1"
+  sha256 "809f5755721918ad23438fea165c00166fc1c1979894f7ab6d69fb9e3f82870a"
   head "https://github.com/dotcommander/jskill.git", branch: "main"
   depends_on "go" => :build
 
