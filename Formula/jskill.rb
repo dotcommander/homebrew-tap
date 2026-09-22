@@ -2,8 +2,8 @@ class Jskill < Formula
   desc "Retrieve, inspect, and invoke local skills and knowledge"
   homepage "https://github.com/dotcommander/jskill"
   url "https://github.com/dotcommander/jskill.git",
-      tag:      "v0.4.0",
-      revision: "1214d92aa0801e294872fef3f47783755d8b52a5",
+      tag:      "v0.5.0",
+      revision: "9af96fb903eca89980acebf67e321288da150210",
       using:    :git
   head "https://github.com/dotcommander/jskill.git", branch: "main"
   depends_on "go" => :build
