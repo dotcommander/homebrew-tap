@@ -2,10 +2,10 @@ class Jskill < Formula
   desc "Retrieve, inspect, and invoke local skills and knowledge"
   homepage "https://github.com/dotcommander/jskill"
   # A direct archive URL avoids redirects while sending the private-repo credential.
-  url "https://codeload.github.com/dotcommander/jskill/legacy.tar.gz/7f1e0f5327c7565472f3299c46db40513d0934bb",
+  url "https://codeload.github.com/dotcommander/jskill/legacy.tar.gz/3c098e2504ca45214a756913e945f524c0b4adbc",
       headers: ["Authorization: Bearer #{ENV.fetch("HOMEBREW_JSKILL_GITHUB_TOKEN", "")}"]
-  version "0.5.1"
-  sha256 "809f5755721918ad23438fea165c00166fc1c1979894f7ab6d69fb9e3f82870a"
+  version "0.6.0"
+  sha256 "5055ce4dd61405a1a1a28ac1d7c43852368b786c7322c36cbe738b30507d4d50"
   head "https://github.com/dotcommander/jskill.git", branch: "main"
   depends_on "go" => :build
 
