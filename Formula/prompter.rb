@@ -1,8 +1,8 @@
 class Prompter < Formula
-  desc "CLI for prompt enhancement, restructuring, and prompt vault search"
+  desc "Refine rough input into production-grade AI prompts"
   homepage "https://github.com/dotcommander/prompter"
-  url "https://github.com/dotcommander/prompter/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "2b823215d6dd7c323a616f5e1cb01d21c23deaab0fa99069d4ece2c092bf84d5"
+  url "https://github.com/dotcommander/prompter/archive/refs/tags/v0.5.0.tar.gz"
+  sha256 "d63c5f2210409925399a4e947851f1e5e2dcdf68bde354851ebff59b6b3a8ff4"
   license "MIT"
   head "https://github.com/dotcommander/prompter.git", branch: "main"
 
@@ -15,6 +15,7 @@ class Prompter < Formula
 
   test do
     assert_match "prompter v", shell_output("#{bin}/prompter --version")
-    assert_match "test", shell_output("#{bin}/prompter image 'test'")
+    assert_match version.to_s, shell_output("#{bin}/prompter --version")
+    assert_match "test", shell_output("#{bin}/prompter --image 'test'")
   end
 end
