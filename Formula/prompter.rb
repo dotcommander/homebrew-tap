@@ -1,8 +1,8 @@
 class Prompter < Formula
   desc "Refine rough input into production-grade AI prompts"
   homepage "https://github.com/dotcommander/prompter"
-  url "https://github.com/dotcommander/prompter/archive/refs/tags/v0.5.0.tar.gz"
-  sha256 "d63c5f2210409925399a4e947851f1e5e2dcdf68bde354851ebff59b6b3a8ff4"
+  url "https://github.com/dotcommander/prompter/archive/refs/tags/v0.5.1.tar.gz"
+  sha256 "eb367b59875acf09dda9cccc116021cb230bdbc38405ae52d532a3672c843b7c"
   license "MIT"
   head "https://github.com/dotcommander/prompter.git", branch: "main"
 
