@@ -1,8 +1,8 @@
 class Pan < Formula
   desc "Repository evidence and guarded improvement workflows for coding agents"
   homepage "https://github.com/dotcommander/pan"
-  url "https://github.com/dotcommander/pan/archive/refs/tags/v0.5.0.tar.gz"
-  sha256 "6f66971727a42a136bdd3f75580a541415a105c4351e1dc5466bb7e52aabeb18"
+  url "https://github.com/dotcommander/pan/archive/refs/tags/v0.6.0.tar.gz"
+  sha256 "aa15232512e8dcd07cfee70e7391994177a75b0584861a1f9455d2f6a6e894ef"
   license "MIT"
   head "https://github.com/dotcommander/pan.git", branch: "main"
 
