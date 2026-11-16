@@ -3,10 +3,10 @@ class Ctxgo < Formula
   homepage "https://github.com/dotcommander/ctxgo"
   # Defer the credential until download so formula metadata never contains it.
   token_var = ENV.key?("HOMEBREW_CTXGO_GITHUB_TOKEN") ? "HOMEBREW_CTXGO_GITHUB_TOKEN" : "HOMEBREW_GITHUB_API_TOKEN"
-  url "https://codeload.github.com/dotcommander/ctxgo/legacy.tar.gz/a1d13d3f767f4c0e83c220f4bee51d6e54880df2",
+  url "https://codeload.github.com/dotcommander/ctxgo/legacy.tar.gz/1baecfe053b2f039b85163f8e382eaa536999f35",
       headers: ["Authorization: Bearer {{HOMEBREW_DEFERRED_ENV:#{token_var}}}"]
-  version "2.1.1"
-  sha256 "f71a9f19c018b2f4c012fb7e3199cae52663882b4fa0127bbf418f275514af6d"
+  version "3.0.0"
+  sha256 "2c17ccef46e72a9469721f661037b79a2e86822240500b242d002ab1081718a1"
   head "https://github.com/dotcommander/ctxgo.git", branch: "main"
 
   depends_on "go" => :build
